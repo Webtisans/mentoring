@@ -1,5 +1,6 @@
 body{
 	font-size: 18px !important;
+	padding-bottom: 2em;
 }
 form{
 	padding-top: 7em;
@@ -7,4 +8,8 @@ form{
 .modal{
 	margin-top: 10%;
 	text-align: center;
+}
+.jumbotron{
+	padding-top: 7em;
+	
 }
