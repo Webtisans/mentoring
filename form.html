@@ -1,45 +1,93 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Personalized Web Development Mentoring</title>
-
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-
-	<!-- Favicon start  -->
-	<link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
-	<link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
-	<link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
-	<link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
-	<link rel="manifest" href="img/favicon/manifest.json">
-	<meta name="msapplication-TileColor" content="#ffffff">
-	<meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
-	<meta name="theme-color" content="#ffffff">
-	<!-- Favicon end  -->
-
-	<!-- Scripts start -->
-	<script type="text/javascript" src='js/ga.js'></script>
-	<!-- Scripts end -->
-
-	<!-- FB tags start -->
-	<meta property="og:title" content="Personalized Web Development Mentoring" />
-	<meta property="og:description" content="Web development is an important industry in the world today and you can work from anywhere with little equipment. Start now!" />
-	<meta property="og:type" content="website" />
-	<meta property="og:url" content="http://mentoring.webtisans.com" />
-	<meta property="og:image" content="http://media.mediatemple.netdna-cdn.com/wp-content/uploads/2011/04/bf_rails.jpg" />
-	<!-- FB tags end -->
-
+	<meta charset="UTF-8">
+	<title>I want to learn Web Development</title>
+	<!-- Latest compiled and minified CSS & JS -->
+	<link rel="stylesheet" media="screen" href="//netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<script src="//code.jquery.com/jquery.js"></script>
+	<script src="//netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="css/form.css">
+	<script src="js/form.js"></script>
 </head>
 <body>
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5522e9575d5397d3" async="async"></script>
-<iframe src="https://docs.google.com/forms/d/1mD3X32gQkjnrDiZ9YgWY0GH8nfmaba6iN9ahnOW9KvQ/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<ul class="nav navbar-nav">
+			<li class="active">
+				<a href="/intro.html">Back</a>
+			</li>
+			<li>
+				<!-- <a href="#">Next</a> -->
+			</li>
+		</ul>
+	</nav>	
+
+
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3">
+				
+				<form name='post' action='//rocky-badlands-4449.herokuapp.com/posts.json'>
+					<div class="form-group">
+						<label for="weekly_time">How many hours do you learn web development per week?​</label>
+						<input type="text" class="form-control" name="weekly_time">
+					</div>
+
+					<div class="form-group">
+						<label for="time">How long have you been trying to learn web development?​</label>
+						<input type="text" class="form-control" name="time">
+					</div>
+
+					<div class="form-group">
+						<label for="money">How much money per month do you invest on learning web development?​</label>
+						<input type="text" class="form-control" name="money">
+					</div>
+
+					<div class="form-group">
+						<label for="how_learnt">How have you learned? Which resources do you use?​
+</label>
+						<textarea name='how_learned' class='form-control'></textarea>
+					</div>
+
+					<div class="form-group">
+						<label for="built">What have you built?​ Please share links if you have.
+</label>
+						<textarea name='built' class='form-control'></textarea>
+					</div>
+
+					<div class="form-group">
+						<label for="reason">Why do you want to learn web development?​ Get a job, build a product, earn more money, have more time to spend with your family and your own, the more specific the better.
+</label>
+						<textarea name='reason' class='form-control'></textarea>
+					</div>
+
+					<div class="form-group">
+						<label for="email">Write your email here if you want to talk more about your needs.​
+</label>
+						<input type="text" class="form-control" name="email">
+					</div>
+
+					<div class="text-center">
+						
+					<button type="submit" class="btn btn-default btn-lg btn-success">Boost my Development Skills!</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- Modal -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-body">
+					<p> Thanks. Enjoy the rest of your day. </p>
+					<p>And Let's Develop a Great Career Together!</p>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
