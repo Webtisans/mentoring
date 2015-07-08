@@ -11,5 +11,24 @@ form{
 }
 .jumbotron{
 	padding-top: 7em;
-	
+	background: transparent;
 }
+
+.form{
+	position: relative;
+	z-index: 1;
+}
+
+
+.form:before{
+	content: '';
+	background-size: cover;
+	z-index: 0;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	-webkit-filter: opacity(50%);
+	        filter: opacity(50%);
+}
+
+.form:before{background-image: url('/img/pc3.jpg'); }

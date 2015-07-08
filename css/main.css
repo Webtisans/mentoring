@@ -14,6 +14,32 @@ iframe{
 .v-center{
 	position: relative;
 	top:  50%;
-	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	        transform: translateY(-50%);
 	z-index: 1050;
 }
+
+
+.landing, .intro{
+	position: relative;
+	z-index: 1;
+}
+.landing:before, .intro:before{
+	content: '';
+	background-size: cover;
+	z-index: 0;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	-webkit-filter: opacity(35%);
+	        filter: opacity(35%);
+}
+
+.landing:before{background-image: url('/img/pc1.jpg'); }
+.intro:before{background-image: url('/img/pc2.jpg'); }
+
+
+.landing h1{
+	font-size: 60px !important;
+}
+
