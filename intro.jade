@@ -1,123 +1,56 @@
-extend layout
+<!DOCTYPE html>
+html(lang="en")
+head
+	meta(charset="UTF-8")
+	title Document
+	// Latest compiled and minified CSS & JS 
+	script(src='//code.jquery.com/jquery.js')
+body
+	
+	h1 Learn Web Development
+	form.h.
+		- weekly_time: How many hours do you learn web development per week?​
+			radio
+				Less than 5 hours
+				More than 5 hours and less than 10 hours
+				More than 10 hours and less than 15 hours
+				More than 15 hours
+		- total_time: How long have you been trying to learn web development?​
+			radio
+				Less than 3 months	
+				More than 3 months and less than 6 months
+				More than 6 months and less than 12 months
+				More than 12 months
+		- monthly_money: How much money per month do you invest on learning web development?​
+			radio
+				Less than $20
+				$21 to $50
+				$51 to $100
+				$101 to $200
+				$201 to $500
+				$501 to $1000
+				More than $1000
+		- learning_resources: How have you learned? Which resources do you use?​
+			checkbox
+				Youtube
+				Udemy
+				Coursera
+				University online courses
+				Other or specify
+		- built_things: What have you built?​ Please share links if you have.
+			textarea
+		- reason: Why do you want to learn web development?​
+			checkbox
+				Get a job
+				Build a product
+				Earn more money
+				Have more time to spend with your family and your own
+				Other
+		- email: Write your email here if you want to talk more about your needs
 
-append css
-	style.
-		/* Space out content a bit */
-		body {
-			padding-top: 20px;
-			padding-bottom: 20px;
-		}
-
-		/* Everything but the jumbotron gets side spacing for mobile first views */
-		.header,
-		.marketing,
-		.footer {
-			padding-left: 15px;
-			padding-right: 15px;
-		}
-
-		/* Custom page header */
-		.header {
-			border-bottom: 1px solid #e5e5e5;
-		}
-		/* Make the masthead heading the same height as the navigation */
-		.header h3 {
-			margin-top: 0;
-			margin-bottom: 0;
-			line-height: 40px;
-			padding-bottom: 19px;
-		}
-
-		/* Custom page footer */
-		.footer {
-			padding-top: 19px;
-			color: #777;
-			border-top: 1px solid #e5e5e5;
-		}
-
-		/* Customize container */
-		@media (min-width: 768px) {
-			.container {
-				max-width: 730px;
-			}
-		}
-		.container-narrow > hr {
-			margin: 30px 0;
-		}
-
-		/* Main marketing message and sign up button */
-		.jumbotron {
-			text-align: center;
-			border-bottom: 1px solid #e5e5e5;
-		}
-		.jumbotron .btn {
-			font-size: 21px;
-			padding: 14px 24px;
-		}
-
-		/* Supporting marketing content */
-		.marketing {
-			margin: 40px 0;
-		}
-		.marketing p + h4 {
-			margin-top: 28px;
-		}
-
-		/* Responsive: Portrait tablets and up */
-		@media screen and (min-width: 768px) {
-			/* Remove the padding we set earlier */
-			.header,
-			.marketing,
-			.footer {
-				padding-left: 0;
-				padding-right: 0;
-			}
-			/* Space out the masthead */
-			.header {
-				margin-bottom: 30px;
-			}
-			/* Remove the bottom border on the jumbotron for visual effect */
-			.jumbotron {
-				border-bottom: 0;
-			}
-		}
-
-block main
-		.container
-			.header
-				nav
-					ul.nav.nav-pills.pull-right(role="tablist")
-						li.active(role="presentation")
-							a(href='#') Home
-						li(role="presentation")
-							a(href='#') About
-						li(role="presentation")
-							a(href='#') Contact
-				h3.text-muted Project name
-			.jumbotron
-				h1 Jumbotron heading
-				p.lead
-					| Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-				p
-					a.btn.btn-lg.btn-success(href="#", role="button") Sign up today
-			.row.marketing
-				.col-lg-6
-					h4 Subheading
-					p
-						| Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.
-					h4 Subheading
-					p
-						| Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.
-					h4 Subheading
-					p Maecenas sed diam eget risus varius blandit sit amet non magna.
-				.col-lg-6
-					h4 Subheading
-					p
-						| Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.
-					h4 Subheading
-					p
-						| Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.
-					h4 Subheading
-					p Maecenas sed diam eget risus varius blandit sit amet non magna.
-			footer.footer
-				p &copy; Company 2013
+	script(src='http://rawgit.com/juanpastas/hacker_form/master/dist/hacker_form.js')
+	style
+		:stylus
+			label
+				margin 0.5ex 0
+				display inline-block
